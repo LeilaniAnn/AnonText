@@ -6,6 +6,10 @@ from twilio.rest import Client
 
 app = Flask(__name__)
 
+account_sid = os.environ.get('account_sid')
+auth_token = os.environ.get('auth_token')
+my_number = os.environ.get('my_number')
+
 client = Client(account_sid, auth_token)
 
 @app.route('/', methods=['GET', 'POST'])
