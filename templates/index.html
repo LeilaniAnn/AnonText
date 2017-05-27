@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+
+    <!-- Page Content -->
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Send me an anonymous text</h2>
+                    <form class="navbar-form navbar-left" method="post">
+                        <div class="form-group">
+                            <input type="text" id="message" name="message" class="form-control" placeholder="message text">
+                            <input type="submit" class="btn">
+                    </form>
+
+                        </div>
+                </div>
+
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="../static/image/text.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    
+{% endblock %}
