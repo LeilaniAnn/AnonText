@@ -1,7 +1,6 @@
 import os
 import requests
 import json
-from config import my_number, account_sid, auth_token
 from flask import Flask, render_template, request
 from twilio.rest import Client
 
